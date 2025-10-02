@@ -21,7 +21,7 @@ export default function Home() {
 
       <section id="home" className="relative h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-[#0A1A2F] via-[#1a2a4f] to-[#0A1A2F]">
-          <div className="absolute inset-0 opacity-10" style={{ backgroundImage: 'url("https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=1920")', backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
+          <div className="absolute inset-0 opacity-10" style={{ backgroundImage: 'url("https://www.freepik.com/free-photo/dramatic-perspective-with-low-angle-view-skyscrapers-looking-up-sky-dubai-vanishing-point_10824095.htm#fromView=search&page=1&position=5&uuid=eadf50eb-3c4b-4780-9001-7bedbbecf162&query=high+rise+investment+buildings+in+dubai")', backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
         </div>
         <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
           <h1 className="text-6xl md:text-7xl font-bold text-white mb-6 leading-tight">Your Gateway to India's
