@@ -43,7 +43,7 @@ export default function Home() {
 
       <section id="solutions" className="py-24 bg-gradient-to-br from-[#0A1A2F] to-[#1a2a4f]">
         <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-5xl font-bold text-white text-center mb-4">Tailored India Investment Strategies</h2>
+          <h2 className="text-5xl font-bold text-white text-center mb-4 playfaire_font">Tailored India Investment Strategies</h2>
           <p className="text-xl text-gray-300 text-center mb-16">for Global Capital</p>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
