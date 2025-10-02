@@ -21,7 +21,7 @@ export default function Home() {
 
       <section id="home" className="relative h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-[#0A1A2F] via-[#1a2a4f] to-[#0A1A2F]">
-          <div className="absolute inset-0 opacity-5" style={{ backgroundImage: 'url("https://img.freepik.com/free-photo/dramatic-perspective-with-low-angle-view-skyscrapers-looking-up-sky-dubai-vanishing-point_231208-7546.jpg?t=st=1759431374~exp=1759434974~hmac=b1fa33ff1d2c88f57c09a7d43859ad1918f04c65332f902974f3af7bc8f68411&w=1480")', backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
+          <div className="absolute inset-0 opacity-1" style={{ backgroundImage: 'url("https://img.freepik.com/free-photo/dramatic-perspective-with-low-angle-view-skyscrapers-looking-up-sky-dubai-vanishing-point_231208-7546.jpg?t=st=1759431374~exp=1759434974~hmac=b1fa33ff1d2c88f57c09a7d43859ad1918f04c65332f902974f3af7bc8f68411&w=1480")', backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
         </div>
         <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
           <h1 className="text-6xl md:text-7xl font-bold text-white mb-6 leading-tight">Your Gateway to India's
