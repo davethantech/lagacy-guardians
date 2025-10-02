@@ -8,8 +8,12 @@
   }
 
   body {
-    font-family: 'Playfair Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
   }
+}
+
+.playfaire_font {
+  font-family: 'Playfair Display'
 }
 
 @layer utilities {
