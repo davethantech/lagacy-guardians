@@ -24,7 +24,7 @@ export default function Home() {
           <div className="absolute inset-0 opacity-25" style={{ backgroundImage: 'url("https://img.freepik.com/free-photo/dramatic-perspective-with-low-angle-view-skyscrapers-looking-up-sky-dubai-vanishing-point_231208-7546.jpg?t=st=1759431374~exp=1759434974~hmac=b1fa33ff1d2c88f57c09a7d43859ad1918f04c65332f902974f3af7bc8f68411&w=1480")', backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
         </div>
         <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
-          <h1 className="text-6xl md:text-7xl font-bold text-white mb-6 leading-tight">Your Gateway to India's
+          <h1 className="text-6xl md:text-7xl font-bold text-white mb-6 leading-tight playfaire_font">Your Gateway to India's
           <br/><span className="text-[#D4AF37]">$5 Trillion Growth Story</span>
           </h1>
           <p className="text-xl md:text-2xl text-gray-300 mb-12 max-w-4xl mx-auto leading-relaxed">
