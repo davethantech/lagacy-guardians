@@ -1,4 +1,4 @@
-import { ArrowRight, Globe, BarChart3, Rocket, Building2, Phone, Mail } from 'lucide-react';
+import { ArrowRight, Globe, BarChart3, Rocket, Building2, Phone, Mail, Target, Shield, TrendingUp } from 'lucide-react';
 import { useState } from 'react';
 import Navigation from '../components/Navigation';
 
@@ -97,6 +97,236 @@ export default function Home() {
               <a href="#contact" className="text-[#D4AF37] font-semibold flex items-center gap-2 hover:gap-3 transition-all">
                 Learn More <ArrowRight size={16} />
               </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* HOW WE WORK SECTION - ADDED AFTER WHITE GLOVE STRUCTURING */}
+      <section id="how-we-work" className="py-24 bg-white">
+        <div className="max-w-7xl mx-auto px-6">
+          <h2 className="text-4xl font-bold text-[#0A1A2F] mb-12 text-center">
+            HOW WE WORK: Our mission is to identify investments aligned with values, legacy, and long-term risk tolerance.
+          </h2>
+
+          <div className="space-y-20">
+            {/* Identify Pain Areas */}
+            <div className="grid md:grid-cols-2 gap-12 items-center">
+              <div>
+                <h3 className="text-2xl font-bold text-[#0A1A2F] mb-6">Identify Pain Areas:</h3>
+                <h4 className="text-xl font-semibold text-[#D4AF37] mb-4">Fragmented India Access:</h4>
+                <p className="text-lg text-gray-700 mb-6">
+                  The Information available about investments in India is inconsistent, scattered and lacks institutional-grade curation.
+                </p>
+                <blockquote className="border-l-4 border-[#D4AF37] pl-6 italic text-gray-600 my-6 text-lg">
+                  "We're not here to talk about products. We're here to design a India Gateway for Family Office framework that protects your wealth, grows it tax-efficiently, and ensures it lasts generations."
+                </blockquote>
+              </div>
+              <div className="bg-gradient-to-br from-[#0A1A2F] to-[#1a2a4f] rounded-2xl p-8 text-white">
+                <h4 className="text-xl font-bold mb-6">The Problem Today:</h4>
+                <p className="text-gray-300 mb-6">
+                  90% of family wealth globally doesn't survive beyond the third generation — not because of bad markets, but because of leakage and lack of rules.
+                </p>
+                <ul className="space-y-3 text-gray-300">
+                  <li className="flex items-start gap-2">
+                    <Target className="text-[#D4AF37] mt-1 flex-shrink-0" size={16} />
+                    <span>90% of family wealth doesn't survive beyond Gen-3 (EY)</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <Target className="text-[#D4AF37] mt-1 flex-shrink-0" size={16} />
+                    <span>GCC families: 15% in real estate vs global avg 10% (UBS 2024)</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <Target className="text-[#D4AF37] mt-1 flex-shrink-0" size={16} />
+                    <span>Incremental income often wasted — no reinvestment policy</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <Target className="text-[#D4AF37] mt-1 flex-shrink-0" size={16} />
+                    <span>No codified access rules → heirs fight, capital erodes</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            {/* Incremental Income Leak */}
+            <div className="bg-gradient-to-r from-[#D4AF37]/10 to-[#0A1A2F]/10 rounded-2xl p-8">
+              <h3 className="text-2xl font-bold text-[#0A1A2F] mb-6 text-center">Incremental Income Leak</h3>
+              <blockquote className="text-center text-xl italic text-gray-700 mb-8 max-w-4xl mx-auto">
+                "This is where compounding collapses. Every year, profits, dividends, rentals come in — but without a reinvestment policy, 30–40% leaks into lifestyle or ad hoc allocations. My approach is simple: minimum 60–70% reinvested, 30–40% for lifestyle and philanthropy. That discipline alone doubles wealth across generations."
+              </blockquote>
+              <div className="text-center mb-6">
+                <p className="text-lg font-semibold text-[#D4AF37]">"The Real Alpha Is in Capturing Surplus."</p>
+              </div>
+              <div className="grid md:grid-cols-2 gap-8 mt-8">
+                <div className="bg-white rounded-xl p-6 shadow-lg">
+                  <h4 className="font-bold text-[#0A1A2F] mb-4">Problem Scenario</h4>
+                  <ul className="space-y-2 text-gray-700">
+                    <li>Annual business profits/dividends = X</li>
+                    <li>If 40% leaks to consumption/unplanned investments</li>
+                    <li className="text-red-600 font-semibold">→ Compounding collapses</li>
+                  </ul>
+                </div>
+                <div className="bg-[#0A1A2F] rounded-xl p-6 text-white shadow-lg">
+                  <h4 className="font-bold text-[#D4AF37] mb-4">Policy Solution</h4>
+                  <ul className="space-y-2">
+                    <li><strong>70% reinvested</strong></li>
+                    <li><strong>30% lifestyle/philanthropy</strong></li>
+                    <li className="text-[#D4AF37] font-semibold">→ Wealth doubles across generations</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            {/* Legacy & Succession Risks */}
+            <div className="grid md:grid-cols-2 gap-12 items-start">
+              <div>
+                <h3 className="text-2xl font-bold text-[#0A1A2F] mb-6">Legacy & Succession Risks</h3>
+                <blockquote className="border-l-4 border-[#D4AF37] pl-6 italic text-gray-600 mb-6 text-lg">
+                  "The bigger risk is succession. Who are beneficiaries? Equal or role-based? How do heirs access wealth — periodic payouts, staged at milestones, or case-by-case approvals? Without rules, legacy collapses. A trust deed and family constitution lock governance, reduce disputes, and institutionalize continuity."
+                </blockquote>
+                <p className="text-lg font-semibold text-[#D4AF37] mb-6">"Without Governance, Legacy Collapses."</p>
+                <div className="bg-gray-50 rounded-xl p-6">
+                  <h4 className="font-bold text-[#0A1A2F] mb-4">Key Questions:</h4>
+                  <ul className="space-y-3 text-gray-700">
+                    <li>• Who are beneficiaries? Equal vs role-based distribution</li>
+                    <li>• Access rules: staged (age 30/40), periodic (annual %), event-based (education, marriage)</li>
+                    <li>• Trust/Family Constitution resolves succession disputes</li>
+                  </ul>
+                </div>
+              </div>
+              <div className="bg-gradient-to-br from-[#0A1A2F] to-[#1a2a4f] rounded-2xl p-8 text-white">
+                <h4 className="text-xl font-bold mb-6 text-center">Governance Pyramid</h4>
+                <div className="space-y-4">
+                  <div className="bg-[#D4AF37]/20 rounded-lg p-4 text-center">
+                    <p className="font-bold">Family Council</p>
+                  </div>
+                  <div className="bg-[#D4AF37]/15 rounded-lg p-4 text-center">
+                    <p className="font-bold">Trustees</p>
+                  </div>
+                  <div className="bg-[#D4AF37]/10 rounded-lg p-4 text-center">
+                    <p className="font-bold">Investment Committee</p>
+                  </div>
+                  <div className="bg-[#D4AF37]/5 rounded-lg p-4 text-center">
+                    <p className="font-bold">Advisory Boards</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* The Solution */}
+            <div className="text-center">
+              <h3 className="text-3xl font-bold text-[#0A1A2F] mb-8">The Solution:</h3>
+              
+              {/* Investment Strategy Protocol */}
+              <div className="bg-gradient-to-br from-[#0A1A2F] to-[#1a2a4f] rounded-2xl p-10 text-white mb-12">
+                <h4 className="text-2xl font-bold text-[#D4AF37] mb-6">Investment Strategy Protocol (ISP) Framework</h4>
+                <blockquote className="text-xl italic text-gray-300 mb-8 max-w-3xl mx-auto">
+                  "This is the baseline ISP framework: Purpose, Governance, Allocation, Incremental Income Policy, Legacy Rules, Risk & KPIs. It's inspired by EY and UBS global playbooks, but it only works when customized to your family's flows and values. That's the process we co-create."
+                </blockquote>
+                <p className="text-lg font-semibold text-[#D4AF37] mb-8">"Your Family Office Blueprint."</p>
+                <div className="grid md:grid-cols-3 gap-6">
+                  <div className="text-center">
+                    <div className="bg-[#D4AF37]/20 rounded-lg p-4 mb-3">
+                      <p className="font-bold">Purpose</p>
+                    </div>
+                    <ArrowRight className="mx-auto text-[#D4AF37] my-2" size={20} />
+                    <div className="bg-[#D4AF37]/20 rounded-lg p-4 mb-3">
+                      <p className="font-bold">Governance</p>
+                    </div>
+                  </div>
+                  <div className="text-center">
+                    <ArrowRight className="mx-auto text-[#D4AF37] my-2" size={20} />
+                    <div className="bg-[#D4AF37]/20 rounded-lg p-4 mb-3">
+                      <p className="font-bold">Allocation</p>
+                    </div>
+                    <ArrowRight className="mx-auto text-[#D4AF37] my-2" size={20} />
+                    <div className="bg-[#D4AF37]/20 rounded-lg p-4 mb-3">
+                      <p className="font-bold">Incremental Income Policy</p>
+                    </div>
+                  </div>
+                  <div className="text-center">
+                    <ArrowRight className="mx-auto text-[#D4AF37] my-2" size={20} />
+                    <div className="bg-[#D4AF37]/20 rounded-lg p-4 mb-3">
+                      <p className="font-bold">Legacy Rules</p>
+                    </div>
+                    <ArrowRight className="mx-auto text-[#D4AF37] my-2" size={20} />
+                    <div className="bg-[#D4AF37]/20 rounded-lg p-4">
+                      <p className="font-bold">Risk & KPIs</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Execution Architecture */}
+              <div className="bg-white border-2 border-[#D4AF37] rounded-2xl p-10">
+                <h4 className="text-2xl font-bold text-[#0A1A2F] mb-6">Execution Architecture:</h4>
+                <blockquote className="text-xl italic text-gray-600 mb-8 max-w-3xl mx-auto">
+                  "Even the best framework fails if execution is wrong. Today, India offers 6.4% GDP growth — but what matters is how you enter. Via GIFT City, we can blend Mutual Funds for stability and AIFs for alpha, targeting 15%+ IRRs, zero tax leakage, fully regulated with Big 4 audits. This is where pilot allocations begin."
+                </blockquote>
+                <p className="text-lg font-semibold text-[#D4AF37] mb-8">"MF + AIF Blend via GIFT City = Zero-Tax Growth Engine."</p>
+                <div className="grid md:grid-cols-2 gap-8">
+                  <div className="text-left">
+                    <ul className="space-y-4 text-gray-700">
+                      <li className="flex items-center gap-3">
+                        <TrendingUp className="text-green-600" size={20} />
+                        <span>MF CAGR 11.8% (15Y) + AIF IRR 16–20% → blended 15%+ net IRRs</span>
+                      </li>
+                      <li className="flex items-center gap-3">
+                        <Shield className="text-green-600" size={20} />
+                        <span>GIFT City = 0% gains, no withholding, USD denominated</span>
+                      </li>
+                      <li className="flex items-center gap-3">
+                        <Target className="text-green-600" size={20} />
+                        <span>Pilot allocation = $5–10M → diversified, tax-efficient, regulated</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="bg-gray-50 rounded-xl p-6">
+                    <h5 className="font-bold text-[#0A1A2F] mb-4 text-center">Performance Comparison</h5>
+                    <div className="space-y-4">
+                      <div className="flex justify-between items-center">
+                        <span className="text-gray-600">Old FO Portfolio</span>
+                        <span className="text-red-600 font-bold">5% net IRR</span>
+                      </div>
+                      <div className="flex justify-between items-center">
+                        <span className="text-gray-600">India Blend Strategy</span>
+                        <span className="text-green-600 font-bold">15%+ IRR</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Values Section */}
+            <div className="grid md:grid-cols-3 gap-8 mt-16">
+              <div className="text-center">
+                <div className="bg-[#D4AF37]/10 w-16 h-16 rounded-xl flex items-center justify-center mb-4 mx-auto">
+                  <Shield className="text-[#D4AF37]" size={32} />
+                </div>
+                <h4 className="text-xl font-bold text-[#0A1A2F] mb-4">Integrity Above All</h4>
+                <p className="text-gray-700">
+                  Financial wealth is only part of the story. Moral legacy—honesty, transparency, patience—is what defines a family office's true success.
+                </p>
+              </div>
+              <div className="text-center">
+                <div className="bg-[#D4AF37]/10 w-16 h-16 rounded-xl flex items-center justify-center mb-4 mx-auto">
+                  <Target className="text-[#D4AF37]" size={32} />
+                </div>
+                <h4 className="text-xl font-bold text-[#0A1A2F] mb-4">Preservation of Trust</h4>
+                <p className="text-gray-700">
+                  Multi-generational confidence grows through prudent stewardship and open communication.
+                </p>
+              </div>
+              <div className="text-center">
+                <div className="bg-[#D4AF37]/10 w-16 h-16 rounded-xl flex items-center justify-center mb-4 mx-auto">
+                  <TrendingUp className="text-[#D4AF37]" size={32} />
+                </div>
+                <h4 className="text-xl font-bold text-[#0A1A2F] mb-4">Compounding of Legacy</h4>
+                <p className="text-gray-700">
+                  Wealth preservation aligned with family values—philanthropy, ethical investing, and impact—extends influence beyond mere financial returns.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -283,8 +513,14 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center">
             <div className="text-2xl font-bold text-[#D4AF37] mb-6">Legacy Guardians</div>
+            
+            {/* ADDED REQUIRED DISCLAIMER */}
+            <p className="text-sm text-gray-400 mb-4 leading-relaxed max-w-4xl mx-auto">
+              <em>Advisory/distribution via licensed partners. Not investment advice. Market risk applies. Past performance not indicative of future results.</em>
+            </p>
+            
             <p className="text-sm text-gray-400 leading-relaxed max-w-4xl mx-auto">
-              Legacy Guardians does not solicit or distribute securities in the UAE. All services are facilitated through regulated partners under the oversight of SEBI and IFSCA (India). Investors are responsible for ensuring compliance with their jurisdictional requirements. This website is intended for informational purposes only.
+              Legacy Guardians is owned by BP International LLC. All services are facilitated through regulated partners under the oversight of SEBI and IFSCA (India). Investors are responsible for ensuring compliance with their jurisdictional requirements. This website is intended for informational purposes only.
             </p>
             <div className="mt-8 text-sm text-gray-500">
               © 2025 Legacy Guardians. All rights reserved.
