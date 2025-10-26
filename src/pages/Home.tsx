@@ -217,43 +217,38 @@ export default function Home() {
             <div className="text-center">
               <h3 className="text-3xl font-bold text-[#0A1A2F] mb-8">The Solution:</h3>
               
-              {/* Investment Strategy Protocol */}
+              {/* Investment Strategy Protocol - CORRECTED LAYOUT */}
               <div className="bg-gradient-to-br from-[#0A1A2F] to-[#1a2a4f] rounded-2xl p-10 text-white mb-12">
-                <h4 className="text-2xl font-bold text-[#D4AF37] mb-6">Investment Strategy Protocol (ISP) Framework</h4>
-                <blockquote className="text-xl italic text-gray-300 mb-8 max-w-3xl mx-auto">
+                <h4 className="text-2xl font-bold text-[#D4AF37] mb-6 text-center">Investment Strategy Protocol (ISP) Framework</h4>
+                <blockquote className="text-xl italic text-gray-300 mb-8 max-w-3xl mx-auto text-center">
                   "This is the baseline ISP framework: Purpose, Governance, Allocation, Incremental Income Policy, Legacy Rules, Risk & KPIs. It's inspired by EY and UBS global playbooks, but it only works when customized to your family's flows and values. That's the process we co-create."
                 </blockquote>
-                <p className="text-lg font-semibold text-[#D4AF37] mb-8">"Your Family Office Blueprint."</p>
-                <div className="grid md:grid-cols-3 gap-6">
-                  <div className="text-center">
-                    <div className="bg-[#D4AF37]/20 rounded-lg p-4 mb-3">
-                      <p className="font-bold">Purpose</p>
+                <p className="text-lg font-semibold text-[#D4AF37] mb-8 text-center">"Your Family Office Blueprint."</p>
+                
+                {/* Horizontal Flow Layout for Desktop */}
+                <div className="hidden md:flex flex-col md:flex-row items-center justify-between gap-4 max-w-5xl mx-auto">
+                  {['Purpose', 'Governance', 'Allocation', 'Income Policy', 'Legacy Rules', 'Risk & KPIs'].map((step, index) => (
+                    <div key={step} className="flex items-center">
+                      <div className="bg-[#D4AF37]/20 rounded-lg p-4 text-center min-w-[120px] hover:bg-[#D4AF37]/30 transition-colors">
+                        <p className="font-bold text-sm md:text-base">{step}</p>
+                      </div>
+                      {index < 5 && (
+                        <ArrowRight className="text-[#D4AF37] mx-2" size={20} />
+                      )}
                     </div>
-                    <ArrowRight className="mx-auto text-[#D4AF37] my-2" size={20} />
-                    <div className="bg-[#D4AF37]/20 rounded-lg p-4 mb-3">
-                      <p className="font-bold">Governance</p>
+                  ))}
+                </div>
+
+                {/* Vertical Layout for Mobile */}
+                <div className="md:hidden mt-6 space-y-4">
+                  {['Purpose', 'Governance', 'Allocation', 'Incremental Income Policy', 'Legacy Rules', 'Risk & KPIs'].map((step) => (
+                    <div key={step} className="flex items-center">
+                      <ArrowRight className="text-[#D4AF37] mr-3" size={16} />
+                      <div className="bg-[#D4AF37]/20 rounded-lg p-3 flex-1 text-center hover:bg-[#D4AF37]/30 transition-colors">
+                        <p className="font-bold text-sm">{step}</p>
+                      </div>
                     </div>
-                  </div>
-                  <div className="text-center">
-                    <ArrowRight className="mx-auto text-[#D4AF37] my-2" size={20} />
-                    <div className="bg-[#D4AF37]/20 rounded-lg p-4 mb-3">
-                      <p className="font-bold">Allocation</p>
-                    </div>
-                    <ArrowRight className="mx-auto text-[#D4AF37] my-2" size={20} />
-                    <div className="bg-[#D4AF37]/20 rounded-lg p-4 mb-3">
-                      <p className="font-bold">Incremental Income Policy</p>
-                    </div>
-                  </div>
-                  <div className="text-center">
-                    <ArrowRight className="mx-auto text-[#D4AF37] my-2" size={20} />
-                    <div className="bg-[#D4AF37]/20 rounded-lg p-4 mb-3">
-                      <p className="font-bold">Legacy Rules</p>
-                    </div>
-                    <ArrowRight className="mx-auto text-[#D4AF37] my-2" size={20} />
-                    <div className="bg-[#D4AF37]/20 rounded-lg p-4">
-                      <p className="font-bold">Risk & KPIs</p>
-                    </div>
-                  </div>
+                  ))}
                 </div>
               </div>
 
