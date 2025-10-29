@@ -25,7 +25,7 @@ export default function Home() {
           <div
             className="absolute inset-0 opacity-25"
             style={{
-              backgroundImage: 'url("https://images.pexels.com/photos/416405/pexels-photo-416405.jpeg?auto=compress&cs=tinysrgb&w=1920")',
+              backgroundImage: 'url("https://cdn.pixabay.com/photo/2019/03/09/13/45/dubai-4044183_1280.jpg")',
               backgroundSize: 'cover',
               backgroundPosition: 'center'
             }}
@@ -409,7 +409,7 @@ export default function Home() {
         <div
           className="absolute inset-0 opacity-5"
           style={{
-            backgroundImage: 'url("https://images.pexels.com/photos/416405/pexels-photo-416405.jpeg?auto=compress&cs=tinysrgb&w=1920")',
+            backgroundImage: 'url("https://cdn.pixabay.com/photo/2019/03/09/13/45/dubai-4044183_1280.jpg")',
             backgroundSize: 'cover',
             backgroundPosition: 'center'
           }}
