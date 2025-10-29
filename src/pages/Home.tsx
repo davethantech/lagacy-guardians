@@ -18,31 +18,46 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-white">
       <Navigation />
-        <div className="absolute inset-0 opacity-25" 
-             style={{ 
-              backgroundImage: 'url("https://images.pexels.com/photos/416405/pexels-photo-416405.jpeg?auto=compress&cs=tinysrgb&w=1920")', 
-              backgroundSize: 'cover', 
-              backgroundPosition: 'center' 
-             }}>
+
+      {/* HERO SECTION */}
+      <section id="home" className="relative h-screen flex items-center justify-center overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-[#0A1A2F] via-[#1a2a4f] to-[#0A1A2F]">
+          <div
+            className="absolute inset-0 opacity-25"
+            style={{
+              backgroundImage: 'url("https://images.pexels.com/photos/416405/pexels-photo-416405.jpeg?auto=compress&cs=tinysrgb&w=1920")',
+              backgroundSize: 'cover',
+              backgroundPosition: 'center'
+            }}
+          ></div>
         </div>
         <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
-          <h1 className="text-6xl md:text-7xl font-bold text-white mb-6 leading-tight playfaire_font">Your Gateway to India's
-          <br/><span className="text-[#D4AF37]">$5 Trillion Growth Story</span>
+          <h1 className="text-6xl md:text-7xl font-bold text-white mb-6 leading-tight playfaire_font">
+            Your Gateway to India's
+            <br />
+            <span className="text-[#D4AF37]">$5 Trillion Growth Story</span>
           </h1>
           <p className="text-xl md:text-2xl text-gray-300 mb-12 max-w-4xl mx-auto leading-relaxed">
             We partner with Family Offices, NRIs, and Global Investors to unlock India's fastest-growing opportunities through AIFs, Pre-IPO deals, and GIFT City structures — with clarity, compliance, and zero capital gains tax for eligible investors.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="#contact" className="bg-[#D4AF37] text-[#0A1A2F] px-8 py-4 rounded-lg font-semibold text-lg hover:bg-[#c49d2d] transition-all hover:scale-105 flex items-center justify-center gap-2">
+            <a
+              href="#contact"
+              className="bg-[#D4AF37] text-[#0A1A2F] px-8 py-4 rounded-lg font-semibold text-lg hover:bg-[#c49d2d] transition-all hover:scale-105 flex items-center justify-center gap-2"
+            >
               Schedule a Private Consultation <ArrowRight size={20} />
             </a>
-            <a href="#insights" className="border-2 border-[#D4AF37] text-[#D4AF37] px-8 py-4 rounded-lg font-semibold text-lg hover:bg-[#D4AF37] hover:text-[#0A1A2F] transition-all flex items-center justify-center gap-2">
+            <a
+              href="#insights"
+              className="border-2 border-[#D4AF37] text-[#D4AF37] px-8 py-4 rounded-lg font-semibold text-lg hover:bg-[#D4AF37] hover:text-[#0A1A2F] transition-all flex items-center justify-center gap-2"
+            >
               Download Smart Money 2025 Report
             </a>
           </div>
         </div>
       </section>
 
+      {/* SOLUTIONS SECTION */}
       <section id="solutions" className="py-24 bg-gradient-to-br from-[#0A1A2F] to-[#1a2a4f]">
         <div className="max-w-7xl mx-auto px-6">
           <h2 className="text-5xl font-bold text-white text-center mb-4 playfaire_font">Tailored India Investment Strategies</h2>
@@ -104,7 +119,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* HOW WE WORK SECTION - ADDED AFTER WHITE GLOVE STRUCTURING */}
+      {/* HOW WE WORK SECTION */}
       <section id="how-we-work" className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-6">
           <h2 className="text-4xl font-bold text-[#0A1A2F] mb-12 text-center">
@@ -218,15 +233,15 @@ export default function Home() {
             {/* The Solution */}
             <div className="text-center">
               <h3 className="text-3xl font-bold text-[#0A1A2F] mb-8">The Solution:</h3>
-              
-              {/* Investment Strategy Protocol - CORRECTED LAYOUT */}
+
+              {/* Investment Strategy Protocol */}
               <div className="bg-gradient-to-br from-[#0A1A2F] to-[#1a2a4f] rounded-2xl p-10 text-white mb-12">
                 <h4 className="text-2xl font-bold text-[#D4AF37] mb-6 text-center">Investment Strategy Protocol (ISP) Framework</h4>
                 <blockquote className="text-xl italic text-gray-300 mb-8 max-w-3xl mx-auto text-center">
                   "This is the baseline ISP framework: Purpose, Governance, Allocation, Incremental Income Policy, Legacy Rules, Risk & KPIs. It's inspired by EY and UBS global playbooks, but it only works when customized to your family's flows and values. That's the process we co-create."
                 </blockquote>
                 <p className="text-lg font-semibold text-[#D4AF37] mb-8 text-center">"Your Family Office Blueprint."</p>
-                
+
                 {/* Horizontal Flow Layout for Desktop */}
                 <div className="hidden md:flex flex-col md:flex-row items-center justify-between gap-4 max-w-5xl mx-auto">
                   {['Purpose', 'Governance', 'Allocation', 'Income Policy', 'Legacy Rules', 'Risk & KPIs'].map((step, index) => (
@@ -329,6 +344,7 @@ export default function Home() {
         </div>
       </section>
 
+      {/* INSIGHTS SECTION */}
       <section id="insights" className="py-24 bg-gray-50">
         <div className="max-w-7xl mx-auto px-6">
           <h2 className="text-5xl font-bold text-[#0A1A2F] text-center mb-4">Insights that Drive</h2>
@@ -378,15 +394,26 @@ export default function Home() {
           </div>
 
           <div className="text-center mt-12">
-            <a href="#contact" className="inline-flex items-center gap-2 bg-[#D4AF37] text-[#0A1A2F] px-8 py-4 rounded-lg font-semibold text-lg hover:bg-[#c49d2d] transition-all hover:scale-105">
+            <a
+              href="#contact"
+              className="inline-flex items-center gap-2 bg-[#D4AF37] text-[#0A1A2F] px-8 py-4 rounded-lg font-semibold text-lg hover:bg-[#c49d2d] transition-all hover:scale-105"
+            >
               Download Smart Money 2025 Report <ArrowRight size={20} />
             </a>
           </div>
         </div>
       </section>
 
+      {/* FAMILY OFFICES SECTION */}
       <section id="family-offices" className="py-24 bg-gradient-to-br from-[#0A1A2F] to-[#1a2a4f] relative overflow-hidden">
-        <div className="absolute inset-0 opacity-5" style={{ backgroundImage: 'url("https://images.pexels.com/photos/416405/pexels-photo-416405.jpeg?auto=compress&cs=tinysrgb&w=1920")', backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
+        <div
+          className="absolute inset-0 opacity-5"
+          style={{
+            backgroundImage: 'url("https://images.pexels.com/photos/416405/pexels-photo-416405.jpeg?auto=compress&cs=tinysrgb&w=1920")',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center'
+          }}
+        ></div>
         <div className="max-w-5xl mx-auto px-6 text-center relative z-10">
           <h2 className="text-5xl font-bold text-white mb-6">White-Glove Structuring for Serious Investors</h2>
           <p className="text-xl text-gray-300 mb-8 leading-relaxed max-w-3xl mx-auto">
@@ -395,12 +422,16 @@ export default function Home() {
           <p className="text-xl text-gray-300 mb-12 leading-relaxed max-w-3xl mx-auto">
             Whether you're a $500M Family Office in Dubai seeking diversification, or an NRI building a ₹10 Cr+ India allocation, we provide tailored strategies that align with your legacy goals. From compliance frameworks to sourcing privileged deals, we act as your single point of contact for India entry — ensuring transparency, tax efficiency, and performance.
           </p>
-          <a href="#contact" className="inline-flex items-center gap-2 bg-[#D4AF37] text-[#0A1A2F] px-8 py-4 rounded-lg font-semibold text-lg hover:bg-[#c49d2d] transition-all hover:scale-105">
+          <a
+            href="#contact"
+            className="inline-flex items-center gap-2 bg-[#D4AF37] text-[#0A1A2F] px-8 py-4 rounded-lg font-semibold text-lg hover:bg-[#c49d2d] transition-all hover:scale-105"
+          >
             Request Investor Deck <ArrowRight size={20} />
           </a>
         </div>
       </section>
 
+      {/* CONTACT SECTION */}
       <section id="contact" className="py-24 bg-white">
         <div className="max-w-6xl mx-auto px-6">
           <h2 className="text-5xl font-bold text-[#0A1A2F] text-center mb-4">Let's Build Your</h2>
@@ -506,16 +537,17 @@ export default function Home() {
         </div>
       </section>
 
+      {/* FOOTER */}
       <footer className="bg-[#0A1A2F] py-12 border-t border-[#D4AF37]/20">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center">
             <div className="text-2xl font-bold text-[#D4AF37] mb-6">Legacy Guardians</div>
-            
-            {/* ADDED REQUIRED DISCLAIMER */}
+
+            {/* DISCLAIMER */}
             <p className="text-sm text-gray-400 mb-4 leading-relaxed max-w-4xl mx-auto">
               <em>Advisory/distribution via licensed partners. Not investment advice. Market risk applies. Past performance not indicative of future results.</em>
             </p>
-            
+
             <p className="text-sm text-gray-400 leading-relaxed max-w-4xl mx-auto">
               Legacy Guardians is owned by BP International LLC. All services are facilitated through regulated partners under the oversight of SEBI and IFSCA (India). Investors are responsible for ensuring compliance with their jurisdictional requirements. This website is intended for informational purposes only.
             </p>
