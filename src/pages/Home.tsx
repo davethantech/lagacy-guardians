@@ -234,7 +234,6 @@ export default function Home() {
             <div className="text-center">
               <h3 className="text-3xl font-bold text-[#0A1A2F] mb-8">The Solution:</h3>
 
-              {/* Investment Strategy Protocol */}
               <div className="bg-gradient-to-br from-[#0A1A2F] to-[#1a2a4f] rounded-2xl p-10 text-white mb-12">
                 <h4 className="text-2xl font-bold text-[#D4AF37] mb-6 text-center">Investment Strategy Protocol (ISP) Framework</h4>
                 <blockquote className="text-xl italic text-gray-300 mb-8 max-w-3xl mx-auto text-center">
@@ -242,7 +241,6 @@ export default function Home() {
                 </blockquote>
                 <p className="text-lg font-semibold text-[#D4AF37] mb-8 text-center">"Your Family Office Blueprint."</p>
 
-                {/* Horizontal Flow Layout for Desktop */}
                 <div className="hidden md:flex flex-col md:flex-row items-center justify-between gap-4 max-w-5xl mx-auto">
                   {['Purpose', 'Governance', 'Allocation', 'Income Policy', 'Legacy Rules', 'Risk & KPIs'].map((step, index) => (
                     <div key={step} className="flex items-center">
@@ -256,7 +254,6 @@ export default function Home() {
                   ))}
                 </div>
 
-                {/* Vertical Layout for Mobile */}
                 <div className="md:hidden mt-6 space-y-4">
                   {['Purpose', 'Governance', 'Allocation', 'Incremental Income Policy', 'Legacy Rules', 'Risk & KPIs'].map((step) => (
                     <div key={step} className="flex items-center">
@@ -269,7 +266,6 @@ export default function Home() {
                 </div>
               </div>
 
-              {/* Execution Architecture */}
               <div className="bg-white border-2 border-[#D4AF37] rounded-2xl p-10">
                 <h4 className="text-2xl font-bold text-[#0A1A2F] mb-6">Execution Architecture:</h4>
                 <blockquote className="text-xl italic text-gray-600 mb-8 max-w-3xl mx-auto">
@@ -353,7 +349,6 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-12">
             <div className="bg-white rounded-2xl shadow-xl p-10 border border-gray-200">
               <h3 className="text-2xl font-bold text-[#0A1A2F] mb-6">Case Study 1: Hybrid India Growth Portfolio (2020–2025)</h3>
-
               <div className="space-y-4 mb-8">
                 <div className="flex justify-between items-center pb-3 border-b border-gray-200">
                   <span className="text-gray-600 font-medium">Old Model (Global RE + Bonds)</span>
@@ -373,7 +368,6 @@ export default function Home() {
 
             <div className="bg-white rounded-2xl shadow-xl p-10 border border-gray-200">
               <h3 className="text-2xl font-bold text-[#0A1A2F] mb-6">Case Study 2: GIFT City Investor (NRI, GCC-based, 2022–2024)</h3>
-
               <div className="space-y-4 mb-8">
                 <div className="pb-3 border-b border-gray-200">
                   <span className="text-gray-600 font-medium block mb-2">Allocation</span>
@@ -500,7 +494,6 @@ export default function Home() {
 
             <div className="bg-gradient-to-br from-[#0A1A2F] to-[#1a2a4f] rounded-2xl p-10 text-white">
               <h3 className="text-3xl font-bold mb-8">Direct Contact</h3>
-
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
                   <div className="bg-[#D4AF37]/20 p-3 rounded-lg">
@@ -513,7 +506,6 @@ export default function Home() {
                     </a>
                   </div>
                 </div>
-
                 <div className="flex items-start gap-4">
                   <div className="bg-[#D4AF37]/20 p-3 rounded-lg">
                     <Phone className="text-[#D4AF37]" size={24} />
@@ -526,7 +518,6 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-
               <div className="mt-12 pt-8 border-t border-white/20">
                 <a href="#contact" className="inline-flex items-center gap-2 text-[#D4AF37] font-semibold text-lg hover:gap-3 transition-all">
                   Schedule a 1:1 Call <ArrowRight size={20} />
@@ -537,26 +528,74 @@ export default function Home() {
         </div>
       </section>
 
-      {/* FOOTER */}
-      <footer className="bg-[#0A1A2F] py-12 border-t border-[#D4AF37]/20">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center">
-            <div className="text-2xl font-bold text-[#D4AF37] mb-6">Legacy Guardians</div>
-
-            {/* DISCLAIMER */}
-            <p className="text-sm text-gray-400 mb-4 leading-relaxed max-w-4xl mx-auto">
-              <em>Advisory/distribution via licensed partners. Not investment advice. Market risk applies. Past performance not indicative of future results.</em>
-            </p>
-
-            <p className="text-sm text-gray-400 leading-relaxed max-w-4xl mx-auto">
-              Legacy Guardians is owned by BP International LLC. All services are facilitated through regulated partners under the oversight of SEBI and IFSCA (India). Investors are responsible for ensuring compliance with their jurisdictional requirements. This website is intended for informational purposes only.
-            </p>
-            <div className="mt-8 text-sm text-gray-500">
-              © 2025 Legacy Guardians. All rights reserved.
-            </div>
+      {/* FAQ SECTION */}
+      <section id="faq" className="py-24 bg-gray-50">
+        <div className="max-w-4xl mx-auto px-6">
+          <h2 className="text-5xl font-bold text-[#0A1A2F] text-center mb-4 playfaire_font">
+            Frequently Asked Questions
+          </h2>
+          <p className="text-xl text-gray-600 text-center mb-12">
+            Clear answers for serious investors
+          </p>
+          <div className="space-y-6">
+            {[
+              {
+                q: "Access to investment information?",
+                a: "We are an information platform and help with introductions/placement of investments. Opportunities are shared for informational purposes only. Deep due diligence, suitability, and eligibility checks remain the responsibility of the investor. Content is informational; no solicitation in restricted jurisdictions. Risk disclosures apply. Third-party links, governing law, and taxation rules may change."
+              },
+              {
+                q: "Minimum ticket size?",
+                a: "Typically $10 million+, though instrument-specific entry thresholds per sleeve may apply."
+              },
+              {
+                q: "Custody and execution?",
+                a: "Always handled exclusively through licensed third-party partners."
+              },
+              {
+                q: "Conflicts of interest?",
+                a: "Full upfront disclosure on instruments, fees, and investment categories. We follow an open-architecture, product-agnostic manager selection process with documented rationale."
+              },
+              {
+                q: "Liquidity?",
+                a: "Strategy-specific. Private sleeves may include lock-in periods."
+              },
+              {
+                q: "Can I invest from the Gulf?",
+                a: "Yes, via approved and compliant channels."
+              },
+              {
+                q: "How are gains taxed?",
+                a: "Tax treatment varies by structure and jurisdiction. We provide frameworks—not tax advice. Please consult your tax advisor."
+              },
+              {
+                q: "Are you a regulated advisor?",
+                a: "We distribute mutual funds and facilitate access to AIFs/PMS exclusively through licensed partners. We operate under applicable regulations; full details are shared in our DDQ (Due Diligence Questionnaire)."
+              },
+              {
+                q: "How do you get paid?",
+                a: "Transparent fee structures: retainers or success-based fees where permitted. Full disclosure of any embedded commissions is provided."
+              },
+              {
+                q: "Where is client money held?",
+                a: "Client funds are held with third-party custodians or AMCs (Asset Management Companies). We never handle client capital directly."
+              },
+              {
+                q: "Do you guarantee returns?",
+                a: "No. All investments carry market risk. Volatility and drawdowns are possible. Past performance is not indicative of future results. We do not participate in losses. Our focus is on robust process and governance."
+              },
+              {
+                q: "Do you audit firms?",
+                a: "No. We rely on audited statements, NAV reports, and disclosures published by AMCs. Upon request—and at an appropriate fee—we can initiate an independent third-party audit."
+              }
+            ].map((item, index) => (
+              <div key={index} className="border border-gray-200 rounded-xl p-6 bg-white transition-all hover:shadow-md">
+                <h3 className="text-lg font-bold text-[#0A1A2F] mb-2">{item.q}</h3>
+                <p className="text-gray-700 leading-relaxed">{item.a}</p>
+              </div>
+            ))}
           </div>
         </div>
-      </footer>
+      </section>
     </div>
   );
 }
