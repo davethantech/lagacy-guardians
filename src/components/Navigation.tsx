@@ -36,7 +36,7 @@ export default function Navigation() {
             onClick={handleHomeClick}
             className="text-2xl font-bold text-[#D4AF37] playfaire_font hover:opacity-80 transition-opacity"
           >
-            Legacy Guardians
+            Legacy Governance  {/* ✅ CHANGED HERE */}
           </button>
 
           {/* Desktop Navigation */}
