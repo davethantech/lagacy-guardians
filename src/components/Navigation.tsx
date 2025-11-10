@@ -4,86 +4,69 @@ export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleNavClick = (sectionId: string) => {
-    // If we're not on the homepage, navigate to homepage with hash
     if (window.location.pathname !== '/') {
       window.location.href = `/#${sectionId}`;
     } else {
-      // If we're on homepage, scroll to section
       const element = document.getElementById(sectionId);
       if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
+        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
       }
     }
-    setIsOpen(false); // Close mobile menu
+    setIsOpen(false);
   };
 
   const handleHomeClick = () => {
     if (window.location.pathname !== '/') {
       window.location.href = '/';
     } else {
-      // Scroll to top if already on homepage
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
     setIsOpen(false);
   };
 
+  // Navigation items (shared for desktop & mobile)
+  const navItems = [
+    { label: 'Home', id: 'home', handler: handleHomeClick },
+    { label: 'Solutions', id: 'solutions' },
+    { label: 'How We Work', id: 'how-we-work' },
+    { label: 'Insights', id: 'insights' },
+    { label: 'Family Offices & NRIs', id: 'family-offices' },
+    { label: 'FAQ', id: 'faq' }, // ✅ Added FAQ
+    { label: 'Contact', id: 'contact' },
+  ];
+
   return (
     <nav className="sticky top-0 z-50 bg-[#0A1A2F] border-b border-[#D4AF37]/20">
-      <div className="max-w-7xl mx-auto px-6 py-4">
-        <div className="flex items-center justify-between">
-          {/* Logo - Always goes to homepage */}
-          <button 
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between h-16">
+          {/* Logo */}
+          <button
             onClick={handleHomeClick}
-            className="text-2xl font-bold text-[#D4AF37] playfaire_font hover:opacity-80 transition-opacity"
+            className="text-2xl font-bold text-[#D4AF37] playfaire_font hover:opacity-80 transition-opacity focus:outline-none"
+            aria-label="Go to homepage"
           >
-            Legacy Governance  {/* ✅ CHANGED HERE */}
+            Legacy Governance
           </button>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-8 text-sm">
-            <button 
-              onClick={handleHomeClick}
-              className="text-white hover:text-[#D4AF37] transition-colors"
-            >
-              Home
-            </button>
-            <button 
-              onClick={() => handleNavClick('solutions')}
-              className="text-white hover:text-[#D4AF37] transition-colors"
-            >
-              Solutions
-            </button>
-            <button 
-              onClick={() => handleNavClick('how-we-work')}
-              className="text-white hover:text-[#D4AF37] transition-colors"
-            >
-              How We Work
-            </button>
-            <button 
-              onClick={() => handleNavClick('insights')}
-              className="text-white hover:text-[#D4AF37] transition-colors"
-            >
-              Insights
-            </button>
-            <button 
-              onClick={() => handleNavClick('family-offices')}
-              className="text-white hover:text-[#D4AF37] transition-colors"
-            >
-              Family Offices & NRIs
-            </button>
-            <button 
-              onClick={() => handleNavClick('contact')}
-              className="text-white hover:text-[#D4AF37] transition-colors"
-            >
-              Contact
-            </button>
+          <div className="hidden md:flex items-center space-x-6 text-sm">
+            {navItems.map((item) => (
+              <button
+                key={item.id}
+                onClick={item.handler ? item.handler : () => handleNavClick(item.id)}
+                className="text-white hover:text-[#D4AF37] transition-colors whitespace-nowrap"
+              >
+                {item.label}
+              </button>
+            ))}
           </div>
 
           {/* Mobile menu button */}
-          <div className="md:hidden">
+          <div className="md:hidden flex items-center">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-white p-2"
+              className="text-white p-2 focus:outline-none"
+              aria-label="Toggle menu"
             >
               <div className="w-6 h-0.5 bg-white mb-1.5"></div>
               <div className="w-6 h-0.5 bg-white mb-1.5"></div>
@@ -94,44 +77,17 @@ export default function Navigation() {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="md:hidden bg-[#0A1A2F] border-t border-[#D4AF37]/20 py-4">
-            <div className="flex flex-col space-y-4">
-              <button 
-                onClick={handleHomeClick}
-                className="text-white hover:text-[#D4AF37] font-medium py-2 text-left transition-colors"
-              >
-                Home
-              </button>
-              <button 
-                onClick={() => handleNavClick('solutions')}
-                className="text-white hover:text-[#D4AF37] font-medium py-2 text-left transition-colors"
-              >
-                Solutions
-              </button>
-              <button 
-                onClick={() => handleNavClick('how-we-work')}
-                className="text-white hover:text-[#D4AF37] font-medium py-2 text-left transition-colors"
-              >
-                How We Work
-              </button>
-              <button 
-                onClick={() => handleNavClick('insights')}
-                className="text-white hover:text-[#D4AF37] font-medium py-2 text-left transition-colors"
-              >
-                Insights
-              </button>
-              <button 
-                onClick={() => handleNavClick('family-offices')}
-                className="text-white hover:text-[#D4AF37] font-medium py-2 text-left transition-colors"
-              >
-                Family Offices & NRIs
-              </button>
-              <button 
-                onClick={() => handleNavClick('contact')}
-                className="text-white hover:text-[#D4AF37] font-medium py-2 text-left transition-colors"
-              >
-                Contact
-              </button>
+          <div className="md:hidden bg-[#0A1A2F] border-t border-[#D4AF37]/20">
+            <div className="px-4 py-4 space-y-3">
+              {navItems.map((item) => (
+                <button
+                  key={item.id}
+                  onClick={item.handler ? item.handler : () => handleNavClick(item.id)}
+                  className="block w-full text-left text-white hover:text-[#D4AF37] font-medium py-2.5 transition-colors"
+                >
+                  {item.label}
+                </button>
+              ))}
             </div>
           </div>
         )}
