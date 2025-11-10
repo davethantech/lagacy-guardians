@@ -596,6 +596,134 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* FOOTER */}
+      <footer className="bg-[#0A1A2F] py-12 border-t border-[#D4AF37]/20">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+            {/* Company Info */}
+            <div>
+              <div className="text-2xl font-bold text-[#D4AF37] mb-4">Legacy Governance</div>
+              <p className="text-gray-400 mb-4">
+                Empowering global investors with clarity, compliance, and curated access to India’s $5T growth story.
+              </p>
+              <p className="text-gray-400 text-sm">
+                © 2025 Legacy Governance. All rights reserved.
+              </p>
+            </div>
+
+            {/* Quick Links */}
+            <div>
+              <h3 className="text-lg font-bold text-[#D4AF37] mb-4">Quick Links</h3>
+              <ul className="space-y-2">
+                <li>
+                  <a href="#home" className="text-gray-300 hover:text-[#D4AF37] transition-colors">
+                    Home
+                  </a>
+                </li>
+                <li>
+                  <a href="#solutions" className="text-gray-300 hover:text-[#D4AF37] transition-colors">
+                    Solutions
+                  </a>
+                </li>
+                <li>
+                  <a href="#how-we-work" className="text-gray-300 hover:text-[#D4AF37] transition-colors">
+                    How We Work
+                  </a>
+                </li>
+                <li>
+                  <a href="#insights" className="text-gray-300 hover:text-[#D4AF37] transition-colors">
+                    Insights
+                  </a>
+                </li>
+                <li>
+                  <a href="#family-offices" className="text-gray-300 hover:text-[#D4AF37] transition-colors">
+                    Family Offices & NRIs
+                  </a>
+                </li>
+                <li>
+                  <a href="#contact" className="text-gray-300 hover:text-[#D4AF37] transition-colors">
+                    Contact
+                  </a>
+                </li>
+                <li>
+                  <a href="#faq" className="text-gray-300 hover:text-[#D4AF37] transition-colors">
+                    FAQ
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            {/* Services */}
+            <div>
+              <h3 className="text-lg font-bold text-[#D4AF37] mb-4">Our Services</h3>
+              <ul className="space-y-2">
+                <li>
+                  <a href="#solutions" className="text-gray-300 hover:text-[#D4AF37] transition-colors">
+                    Alternative Investment Funds (AIFs)
+                  </a>
+                </li>
+                <li>
+                  <a href="#solutions" className="text-gray-300 hover:text-[#D4AF37] transition-colors">
+                    Pre-IPO & Private Deals
+                  </a>
+                </li>
+                <li>
+                  <a href="#solutions" className="text-gray-300 hover:text-[#D4AF37] transition-colors">
+                    Mutual Funds & PMS
+                  </a>
+                </li>
+                <li>
+                  <a href="#solutions" className="text-gray-300 hover:text-[#D4AF37] transition-colors">
+                    GIFT City Structures
+                  </a>
+                </li>
+                <li>
+                  <a href="#how-we-work" className="text-gray-300 hover:text-[#D4AF37] transition-colors">
+                    Investment Strategy Protocol
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            {/* Get in Touch */}
+            <div>
+              <h3 className="text-lg font-bold text-[#D4AF37] mb-4">Get in Touch</h3>
+              <div className="space-y-3">
+                <div className="flex items-start gap-3">
+                  <Phone className="text-[#D4AF37] mt-1" size={20} />
+                  <div>
+                    <p className="text-gray-300">+91 9769080022</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3">
+                  <Mail className="text-[#D4AF37] mt-1" size={20} />
+                  <div>
+                    <a href="mailto:ascent.fnl@gmail.com" className="text-gray-300 hover:text-[#D4AF37] transition-colors">
+                      ascent.fnl@gmail.com
+                    </a>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3">
+                  <Target className="text-[#D4AF37] mt-1" size={20} />
+                  <div>
+                    <p className="text-gray-300">Dubai, UAE</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="mt-8 pt-8 border-t border-[#D4AF37]/20 text-center text-sm text-gray-500">
+            <p>
+              Advisory/distribution via licensed partners. Not investment advice. Market risk applies. Past performance not indicative of future results.
+            </p>
+            <p className="mt-2">
+              Legacy Governance is owned by BP International LLC. All services are facilitated through regulated partners under the oversight of SEBI and IFSCA (India). Investors are responsible for ensuring compliance with their jurisdictional requirements. This website is intended for informational purposes only.
+            </p>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }
