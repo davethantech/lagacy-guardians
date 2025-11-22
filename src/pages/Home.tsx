@@ -18,7 +18,6 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-white">
       <Navigation />
-
       {/* HERO SECTION */}
       <section id="home" className="relative h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-[#0A1A2F] via-[#1a2a4f] to-[#0A1A2F]">
@@ -62,7 +61,6 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6">
           <h2 className="text-5xl font-bold text-white text-center mb-4 playfaire_font">Tailored India Investment Strategies</h2>
           <p className="text-xl text-gray-300 text-center mb-16">for Global Capital</p>
-
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="bg-white/5 backdrop-blur-sm border border-[#D4AF37]/20 rounded-2xl p-8 hover:bg-white/10 transition-all hover:scale-105">
               <div className="bg-[#D4AF37]/10 w-16 h-16 rounded-xl flex items-center justify-center mb-6">
@@ -76,7 +74,6 @@ export default function Home() {
                 Learn More <ArrowRight size={16} />
               </a>
             </div>
-
             <div className="bg-white/5 backdrop-blur-sm border border-[#D4AF37]/20 rounded-2xl p-8 hover:bg-white/10 transition-all hover:scale-105">
               <div className="bg-[#D4AF37]/10 w-16 h-16 rounded-xl flex items-center justify-center mb-6">
                 <Rocket className="text-[#D4AF37]" size={32} />
@@ -89,7 +86,6 @@ export default function Home() {
                 Learn More <ArrowRight size={16} />
               </a>
             </div>
-
             <div className="bg-white/5 backdrop-blur-sm border border-[#D4AF37]/20 rounded-2xl p-8 hover:bg-white/10 transition-all hover:scale-105">
               <div className="bg-[#D4AF37]/10 w-16 h-16 rounded-xl flex items-center justify-center mb-6">
                 <BarChart3 className="text-[#D4AF37]" size={32} />
@@ -102,7 +98,6 @@ export default function Home() {
                 Learn More <ArrowRight size={16} />
               </a>
             </div>
-
             <div className="bg-white/5 backdrop-blur-sm border border-[#D4AF37]/20 rounded-2xl p-8 hover:bg-white/10 transition-all hover:scale-105">
               <div className="bg-[#D4AF37]/10 w-16 h-16 rounded-xl flex items-center justify-center mb-6">
                 <Globe className="text-[#D4AF37]" size={32} />
@@ -125,7 +120,6 @@ export default function Home() {
           <h2 className="text-4xl font-bold text-[#0A1A2F] mb-12 text-center">
             HOW WE WORK: Our mission is to identify investments aligned with values, legacy, and long-term risk tolerance.
           </h2>
-
           <div className="space-y-20">
             {/* Identify Pain Areas */}
             <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -164,7 +158,6 @@ export default function Home() {
                 </ul>
               </div>
             </div>
-
             {/* Incremental Income Leak */}
             <div className="bg-gradient-to-r from-[#D4AF37]/10 to-[#0A1A2F]/10 rounded-2xl p-8">
               <h3 className="text-2xl font-bold text-[#0A1A2F] mb-6 text-center">Incremental Income Leak</h3>
@@ -193,7 +186,6 @@ export default function Home() {
                 </div>
               </div>
             </div>
-
             {/* Legacy & Succession Risks */}
             <div className="grid md:grid-cols-2 gap-12 items-start">
               <div>
@@ -229,18 +221,15 @@ export default function Home() {
                 </div>
               </div>
             </div>
-
             {/* The Solution */}
             <div className="text-center">
               <h3 className="text-3xl font-bold text-[#0A1A2F] mb-8">The Solution:</h3>
-
               <div className="bg-gradient-to-br from-[#0A1A2F] to-[#1a2a4f] rounded-2xl p-10 text-white mb-12">
                 <h4 className="text-2xl font-bold text-[#D4AF37] mb-6 text-center">Investment Strategy Protocol (ISP) Framework</h4>
                 <blockquote className="text-xl italic text-gray-300 mb-8 max-w-3xl mx-auto text-center">
                   "This is the baseline ISP framework: Purpose, Governance, Allocation, Incremental Income Policy, Legacy Rules, Risk & KPIs. It's inspired by EY and UBS global playbooks, but it only works when customized to your family's flows and values. That's the process we co-create."
                 </blockquote>
                 <p className="text-lg font-semibold text-[#D4AF37] mb-8 text-center">"Your Family Office Blueprint."</p>
-
                 <div className="hidden md:flex flex-col md:flex-row items-center justify-between gap-4 max-w-5xl mx-auto">
                   {['Purpose', 'Governance', 'Allocation', 'Income Policy', 'Legacy Rules', 'Risk & KPIs'].map((step, index) => (
                     <div key={step} className="flex items-center">
@@ -253,7 +242,6 @@ export default function Home() {
                     </div>
                   ))}
                 </div>
-
                 <div className="md:hidden mt-6 space-y-4">
                   {['Purpose', 'Governance', 'Allocation', 'Incremental Income Policy', 'Legacy Rules', 'Risk & KPIs'].map((step) => (
                     <div key={step} className="flex items-center">
@@ -265,7 +253,6 @@ export default function Home() {
                   ))}
                 </div>
               </div>
-
               <div className="bg-white border-2 border-[#D4AF37] rounded-2xl p-10">
                 <h4 className="text-2xl font-bold text-[#0A1A2F] mb-6">Execution Architecture:</h4>
                 <blockquote className="text-xl italic text-gray-600 mb-8 max-w-3xl mx-auto">
@@ -305,7 +292,6 @@ export default function Home() {
                 </div>
               </div>
             </div>
-
             {/* Values Section */}
             <div className="grid md:grid-cols-3 gap-8 mt-16">
               <div className="text-center">
@@ -345,7 +331,6 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6">
           <h2 className="text-5xl font-bold text-[#0A1A2F] text-center mb-4">Insights that Drive</h2>
           <p className="text-2xl text-gray-600 text-center mb-16">Smarter Allocations</p>
-
           <div className="grid md:grid-cols-2 gap-12">
             <div className="bg-white rounded-2xl shadow-xl p-10 border border-gray-200">
               <h3 className="text-2xl font-bold text-[#0A1A2F] mb-6">Case Study 1: Hybrid India Growth Portfolio (2020–2025)</h3>
@@ -365,7 +350,6 @@ export default function Home() {
                 </div>
               </div>
             </div>
-
             <div className="bg-white rounded-2xl shadow-xl p-10 border border-gray-200">
               <h3 className="text-2xl font-bold text-[#0A1A2F] mb-6">Case Study 2: GIFT City Investor (NRI, GCC-based, 2022–2024)</h3>
               <div className="space-y-4 mb-8">
@@ -386,7 +370,6 @@ export default function Home() {
               </div>
             </div>
           </div>
-
           <div className="text-center mt-12">
             <a
               href="#contact"
@@ -430,7 +413,6 @@ export default function Home() {
         <div className="max-w-6xl mx-auto px-6">
           <h2 className="text-5xl font-bold text-[#0A1A2F] text-center mb-4">Let's Build Your</h2>
           <p className="text-2xl text-gray-600 text-center mb-16">India Allocation Strategy</p>
-
           <div className="grid md:grid-cols-2 gap-12">
             <div>
               <form onSubmit={handleSubmit} className="space-y-6">
@@ -444,7 +426,6 @@ export default function Home() {
                     required
                   />
                 </div>
-
                 <div>
                   <label className="block text-sm font-semibold text-gray-700 mb-2">Email</label>
                   <input
@@ -455,7 +436,6 @@ export default function Home() {
                     required
                   />
                 </div>
-
                 <div>
                   <label className="block text-sm font-semibold text-gray-700 mb-2">Country</label>
                   <input
@@ -466,7 +446,6 @@ export default function Home() {
                     required
                   />
                 </div>
-
                 <div>
                   <label className="block text-sm font-semibold text-gray-700 mb-2">Investment Focus</label>
                   <select
@@ -482,7 +461,6 @@ export default function Home() {
                     <option value="GIFT City">GIFT City Structures</option>
                   </select>
                 </div>
-
                 <button
                   type="submit"
                   className="w-full bg-[#D4AF37] text-[#0A1A2F] px-8 py-4 rounded-lg font-semibold text-lg hover:bg-[#c49d2d] transition-all hover:scale-105"
@@ -491,7 +469,6 @@ export default function Home() {
                 </button>
               </form>
             </div>
-
             <div className="bg-gradient-to-br from-[#0A1A2F] to-[#1a2a4f] rounded-2xl p-10 text-white">
               <h3 className="text-3xl font-bold mb-8">Direct Contact</h3>
               <div className="space-y-6">
@@ -603,15 +580,14 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             {/* Company Info */}
             <div>
-              <div className="text-2xl font-bold text-[#D4AF37] mb-4">Legacy Governance</div>
+              <div className="text-2xl font-bold text-[#D4AF37] mb-4">Legacy Governor</div>
               <p className="text-gray-400 mb-4">
                 Empowering global investors with clarity, compliance, and curated access to India’s $5T growth story.
               </p>
               <p className="text-gray-400 text-sm">
-                © 2025 Legacy Governance. All rights reserved.
+                © 2025 Legacy Governor. All rights reserved.
               </p>
             </div>
-
             {/* Quick Links */}
             <div>
               <h3 className="text-lg font-bold text-[#D4AF37] mb-4">Quick Links</h3>
@@ -653,7 +629,6 @@ export default function Home() {
                 </li>
               </ul>
             </div>
-
             {/* Services */}
             <div>
               <h3 className="text-lg font-bold text-[#D4AF37] mb-4">Our Services</h3>
@@ -685,7 +660,6 @@ export default function Home() {
                 </li>
               </ul>
             </div>
-
             {/* Get in Touch */}
             <div>
               <h3 className="text-lg font-bold text-[#D4AF37] mb-4">Get in Touch</h3>
@@ -713,13 +687,12 @@ export default function Home() {
               </div>
             </div>
           </div>
-
           <div className="mt-8 pt-8 border-t border-[#D4AF37]/20 text-center text-sm text-gray-500">
             <p>
               Advisory/distribution via licensed partners. Not investment advice. Market risk applies. Past performance not indicative of future results.
             </p>
             <p className="mt-2">
-              Legacy Governance is owned by BP International LLC. All services are facilitated through regulated partners under the oversight of SEBI and IFSCA (India). Investors are responsible for ensuring compliance with their jurisdictional requirements. This website is intended for informational purposes only.
+              Legacy Governor is owned by BP International LLC. All services are facilitated through regulated partners under the oversight of SEBI and IFSCA (India). Investors are responsible for ensuring compliance with their jurisdictional requirements. This website is intended for informational purposes only.
             </p>
           </div>
         </div>
