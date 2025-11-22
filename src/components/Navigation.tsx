@@ -24,14 +24,13 @@ export default function Navigation() {
     setIsOpen(false);
   };
 
-  // Navigation items (shared for desktop & mobile)
   const navItems = [
     { label: 'Home', id: 'home', handler: handleHomeClick },
     { label: 'Solutions', id: 'solutions' },
     { label: 'How We Work', id: 'how-we-work' },
     { label: 'Insights', id: 'insights' },
     { label: 'Family Offices & NRIs', id: 'family-offices' },
-    { label: 'FAQ', id: 'faq' }, // ✅ Added FAQ
+    { label: 'FAQ', id: 'faq' },
     { label: 'Contact', id: 'contact' },
   ];
 
@@ -45,7 +44,7 @@ export default function Navigation() {
             className="text-2xl font-bold text-[#D4AF37] playfaire_font hover:opacity-80 transition-opacity focus:outline-none"
             aria-label="Go to homepage"
           >
-            Legacy Governance
+            Legacy Governor
           </button>
 
           {/* Desktop Navigation */}
@@ -78,12 +77,12 @@ export default function Navigation() {
         {/* Mobile Navigation */}
         {isOpen && (
           <div className="md:hidden bg-[#0A1A2F] border-t border-[#D4AF37]/20">
-            <div className="px-4 py-4 space-y-3">
+            <div className="px-4 py-5 space-y-3">
               {navItems.map((item) => (
                 <button
                   key={item.id}
                   onClick={item.handler ? item.handler : () => handleNavClick(item.id)}
-                  className="block w-full text-left text-white hover:text-[#D4AF37] font-medium py-2.5 transition-colors"
+                  className="block w-full text-left text-white hover:text-[#D4AF37] font-medium py-3 transition-colors"
                 >
                   {item.label}
                 </button>
