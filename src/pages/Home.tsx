@@ -479,7 +479,7 @@ export default function Home() {
                   <div>
                     <p className="text-sm text-gray-400 mb-1">Email</p>
                     <a href="mailto:ascent.fnl@gmail.com" className="text-lg text-[#D4AF37] hover:underline">
-                      ascent.fnl@gmail.com
+                      ceo@legacygovernor.com
                     </a>
                   </div>
                 </div>
