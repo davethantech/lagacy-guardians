@@ -674,7 +674,7 @@ export default function Home() {
                   <Mail className="text-[#D4AF37] mt-1" size={20} />
                   <div>
                     <a href="mailto:ascent.fnl@gmail.com" className="text-gray-300 hover:text-[#D4AF37] transition-colors">
-                      ascent.fnl@gmail.com
+                      ceo@legacygovernor.com
                     </a>
                   </div>
                 </div>
