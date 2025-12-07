@@ -496,7 +496,12 @@ export default function Home() {
                 </div>
               </div>
               <div className="mt-12 pt-8 border-t border-white/20">
-                <a href="#contact" className="inline-flex items-center gap-2 text-[#D4AF37] font-semibold text-lg hover:gap-3 transition-all">
+                <a
+                  href="https://calendar.zoho.in/eventreqForm/zz080212304ed159af2f2ee4b164899a17ae5802c75cc4f8a21486aae81149d1229b86c2a35caee008270f9e80c2f5e7ae353f0039?theme=0&l=en&tz=Asia%2FKolkata"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-[#D4AF37] font-semibold text-lg hover:gap-3 transition-all"
+                >
                   Schedule a 1:1 Call <ArrowRight size={20} />
                 </a>
               </div>
