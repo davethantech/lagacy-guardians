@@ -497,7 +497,7 @@ export default function Home() {
               </div>
               <div className="mt-12 pt-8 border-t border-white/20">
                 <a
-                  href="<iframe src="https://calendar.zoho.in/zc/ui/embed/#calendar=zz080212304ed159af2f2ee4b164899a17ae5802c75cc4f8a21486aae81149d1229b86c2a35caee008270f9e80c2f5e7ae353f0039&title=ascent.fnl&type=1&language=en&timezone=Asia%2FKolkata&showTitle=1&showTimezone=1&view=day&showDetail=0&theme=1&eventColorType=light&showLogo=1" title="ascent.fnl"width="350" height="500" frameBorder="0" scrolling="no"></iframe>"
+                  href="https://calendar.zoho.in/zc/ui/embed/#calendar=zz080212304ed159af2f2ee4b164899a17ae5802c75cc4f8a21486aae81149d1229b86c2a35caee008270f9e80c2f5e7ae353f0039&mode=pub&timezone=Asia/Kolkata"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 text-[#D4AF37] font-semibold text-lg hover:gap-3 transition-all"
